@@ -1,0 +1,1 @@
+Demo Chatbot Google gemini and Openai with Vercel AI SDK
