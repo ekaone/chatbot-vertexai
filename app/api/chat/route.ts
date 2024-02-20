@@ -7,7 +7,7 @@ const openai = new OpenAI({ apiKey: process.env.GPT_API_KEY || '' })
 
 export async function POST(req: Request) {
   try {
-    if (!process.env.OPENAI_API_KEY) {
+    if (!process.env.GPT_API_KEY) {
       return new NextResponse('Missing OpenAI API Key.', { status: 400 })
     }
 
