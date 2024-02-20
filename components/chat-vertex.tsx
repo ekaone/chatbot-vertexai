@@ -2,6 +2,7 @@
 
 import { useChat } from 'ai/react'
 import { useEffect, useRef } from 'react'
+import Markdown from 'react-markdown'
 
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -74,7 +75,7 @@ export default function ChatGoogle() {
                         <CopyToClipboard message={m} className='-mt-1' />
                       </div>
                       <div className='mt-2 text-sm text-zinc-500'>
-                        {m.content}
+                        <Markdown>{m.content}</Markdown>
                       </div>
                     </div>
                   </div>
